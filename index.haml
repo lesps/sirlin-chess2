@@ -1,0 +1,7 @@
+%html
+  %head
+
+  %body
+    - (0...8).each do |i|
+      - (0...8).each do |j|
+        %div{:class=>"pos-#{i}-#{j}"}

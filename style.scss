@@ -1,0 +1,18 @@
+$cellSize : 32;
+
+$firstCellLeft: 100;
+
+$firstCellTop: 150;
+
+@for $i from 0 through 7 {
+  @for $j from 0 through 7 {
+    .pos-#{$i}-#{$j}{
+      position:absolute;
+      left:$firstCellLeft + $cellSize * $j;
+      right:$firstCellTop + $cellSize * $i;
+    }
+  }
+}
+    
+  
+
